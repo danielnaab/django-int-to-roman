@@ -1,6 +1,6 @@
 # django-int-to-roman
 
-A simple Django project that converts an integer to a roman numeral. Django 1.8
+A simple Django project that converts an integer to a Roman numeral. Django 1.8
 and Python 2.7.
 
 ## Install project and dependencies
@@ -60,8 +60,8 @@ export DJANGO_SETTINGS_MODULE=int_to_roman.settings.production
 ## Project outline
 
 - Because this is a simple Django project, there is no reason for the use of
-"apps". The sole URL is specified in the root `urlpatterns`, and the role view
-is in a root `views.py`.
+"apps". The sole view is specified in the root `urlpatterns` with two URL
+patterns.
 
 - Settings are modularized into a package, with `defaults.py` specifying the
 base settings and environment-specific settings in separate modules.

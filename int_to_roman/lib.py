@@ -21,7 +21,7 @@ MAP = (
 def integer_to_roman(integer):
     result_numeral = ''
 
-    # Iterate over the roman numberals from most to least significant digit.
+    # Iterate over the roman numerals from most to least significant digit.
     for numeral, decimal in MAP:
         # Add this digit to the `result_numeral` the number of times it may be
         # consumed. This is integer math, so the remainer of this division will
@@ -29,7 +29,7 @@ def integer_to_roman(integer):
         # remainder omitted.
 
         # Determine the number of times to repeat this digit.
-        times = (integer / decimal)
+        times = integer / decimal
 
         # Add this digit that many times to the result.
         result_numeral += numeral * times

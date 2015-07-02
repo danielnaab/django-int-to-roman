@@ -29,6 +29,10 @@ fieldset, #result {
     border: solid 1px lightgray;
 }
 
+.errorlist {
+    color: red;
+}
+
 #result {
     font-size: 1.5em;
 }

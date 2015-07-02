@@ -8,8 +8,8 @@ class ConversionTestCase(SimpleTestCase):
         """
         Confirm that all numbers from 1-3999 properly convert.
         """
-        for int, roman in INT_TO_ROMAN_MAPPING.iteritems():
-            result = integer_to_roman(int)
+        for integer, roman in INT_TO_ROMAN_MAPPING.iteritems():
+            result = integer_to_roman(integer)
             print 'Testing %s == %s' % (result, roman)
             self.assertEqual(result, roman)
 

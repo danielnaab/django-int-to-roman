@@ -35,6 +35,6 @@ def integer_to_roman(integer):
         result_numeral += numeral * times
 
         # Decrement our remaining count by the above value.
-        integer -= (times * decimal)
+        integer -= times * decimal
 
     return result_numeral

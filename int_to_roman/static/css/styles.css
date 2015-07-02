@@ -1,0 +1,43 @@
+@import url("reset.css");
+
+body {
+    padding: 1em;
+    font-family: sans-serif;
+}
+
+header {
+    border-bottom: solid 1px lightgray;
+    margin-bottom: 1em;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+dl {
+    margin-bottom: 2em;
+}
+
+input[type="submit"] {
+    float: right;
+}
+
+fieldset, #result {
+    width: 400px;
+    padding: 20px;
+    margin-bottom: 1em;
+    border: solid 1px lightgray;
+}
+
+#result {
+    font-size: 1.5em;
+}
+
+.integer, .roman {
+    font-weight: bold;
+}
+
+footer {
+    font-size: .8em;
+    text-align: center;
+}

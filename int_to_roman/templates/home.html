@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if numeral %}
+    <div id="result">
+        <span class="integer">{{integer}}</span> is <span class="roman">{{numeral}}</span> in Roman numerals.
+    </div>
+{% endif %}
+
+<form id="integer-to-roman" action="{% url 'convert' %}" method="post">
+    <fieldset>
+        <legend>
+            {% if numeral %}
+                Convert another integer to a Roman numeral
+            {% else %}
+                Convert an integer to a Roman numeral
+            {% endif %}
+        </legend>
+        {{form.as_p}}
+        {% csrf_token %}
+        <input type="submit" value="Get Roman Numeral" />
+    </fieldset>
+</form>
+
+{% endblock content %}
